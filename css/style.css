@@ -145,6 +145,7 @@ span {
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
 }
 
@@ -314,8 +315,34 @@ span {
 }
 
 footer {
-  background: #383838;
-  height: 70px;
+  background: #f5f5f5;
+  height: 100px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-logo {
+  padding: 30px;
+  font-size: 18px;
+}
+.footer .bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+.bottom-nav .link-items {
+  list-style: none;
+}
+.social-media {
+  margin: auto 0;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.social-media img {
+  height: 30px;
+  width: 30px;
 }
