@@ -19,7 +19,7 @@ span {
 .nav {
   padding: 10px 135px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .brand-logo {
   height: 60px;
@@ -29,14 +29,17 @@ span {
   display: flex;
   align-items: center;
 }
+.nav-logo {
+  margin-right: 40px;
+}
 
 .search {
-  width: 500px;
+  width: 450px;
   display: flex;
 }
 
 .search-box {
-  width: 80%;
+  width: 60%;
   height: 40px;
   padding: 10px;
   border-top-left-radius: 10px;
@@ -69,12 +72,15 @@ span {
   color: #a9a9a9;
 }
 
-.nav-items a {
+/* .nav-items a {
   margin-left: 20px;
-}
+} */
 
 .nav-items a img {
   width: 30px;
+}
+.hamburger {
+  display: none;
 }
 
 .links-container {
@@ -345,4 +351,56 @@ footer {
 .social-media img {
   height: 30px;
   width: 30px;
+}
+
+@media (max-width: 770px) {
+  .nav-logo {
+    margin-right: 280px;
+    font-size: 25px;
+  }
+  .links-container,
+  .search {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  .nav-items a img {
+    width: 30px;
+    margin-left: 30px;
+  }
+  footer {
+    height: 100%;
+  }
+
+  .footer {
+    display: flex;
+  }
+  .footer .bottom-nav {
+    display: block;
+    margin: auto 0;
+  }
+  .footer .footer-logo {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 735px) {
+  .nav-logo {
+    margin-right: 150px;
+    font-size: 25px;
+  }
+  .nav {
+    padding: 10px 99px;
+  }
+}
+@media (max-width: 550px) {
+  .nav-logo {
+    font-size: 16px;
+  }
+  .collection-container {
+    display: block;
+  }
 }
