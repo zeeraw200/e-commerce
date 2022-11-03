@@ -9,7 +9,7 @@ span {
 }
 
 .navbar {
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -376,7 +376,7 @@ footer {
     position: fixed;
   }
   ul.links-container {
-    /* position: fixed; */
+    position: fixed;
     left: -100%;
     gap: 0;
     flex-direction: column;
